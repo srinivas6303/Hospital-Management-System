@@ -1,0 +1,155 @@
+HOSPITAL MANAGEMENT SYSTEM:
+===========================
+
+Skills Used:
+-----------
+Java,Sql,Jdbc
+
+Description:
+-----------
+Developed a Java-based system for managing hospital operations, including patients, doctors, and appointments.
+
+Implemented the Patient class with methods for adding, removing, viewing, and retrieving patient details.
+Developed the Doctor class with methods for checking doctor availability and viewing doctor details.
+Created the Appointment class with methods for booking appointments and viewing appointment details.
+Designed the HospitalManagementSystem class to act as the main driver, featuring a user-friendly menu and managing database interactions.
+
+
+
+PROJECT STRUCTURE:
+*****************
+There are 4 class present here and its individual methods
+
+1.Patient:
++-------------------+---------+
+|      Methods      |  Return |
++-------------------+---------+
+| addPatient()      |  void   |
++-------------------+---------+
+| viewPatients()    |  void   |
++-------------------+---------+
+| getPatientById()  | boolean |
++-------------------+---------+
+
+
+2.Doctor:
++-----------------------+---------+
+|       Methods         |  Return |
++-----------------------+---------+
+| viewDoctors()         |  void   |
++-----------------------+---------+
+| getDoctorById()       | boolean |
++-----------------------+---------+
+
+
+3.Appointment:
++-----------------------+---------+
+|       Methods         |  Return |
++-----------------------+---------+
+| bookAppointment()     |  void   |
++-----------------------+---------+
+| isDoctorAvailable()   | boolean |
++-----------------------+---------+
+| viewAppointments()    |  void   |
++-----------------------+---------+
+
+
+
+4.Driver:
+---------
+-->driver ,connection
+runs Patient class,Doctor class and Appointments class
+-->contain main menu
+ 
+
+
+
+
+
+DATABASE SCHEMA:
+*************** 
+There 3 tables in a database
+they are:
+
+DATABASE NAME:HOSPITAL
+----------------------
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| hospital           |
+| information_schema |
+| mysql              |
+| org                |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> use hospital;
+Database changed
+
+
+mysql> show tables;
++--------------------+
+| Tables_in_hospital |
++--------------------+
+| appointments       |
+| doctors            |
+| patients           |
++--------------------+
+3 rows in set (0.02 sec)
+
+
+mysql> desc patients;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int          | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(225) | NO   |     | NULL    |                |
+| age    | int          | NO   |     | NULL    |                |
+| gender | varchar(10)  | NO   |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from patients;
+Empty set (0.00 sec)
+
+
+mysql> desc doctors;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| id             | int          | NO   | PRI | NULL    | auto_increment |
+| name           | varchar(255) | NO   |     | NULL    |                |
+| specialization | varchar(255) | NO   |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from doctors;
++----+----------+----------------+
+| id | name     | specialization |
++----+----------+----------------+
+|  1 | Kalyan   | Neurology      |//Backend data
+|  2 | Srinivas | Cardiology     |
+|  3 | Praveen  | Radiology      |
++----+----------+----------------+
+3 rows in set (0.00 sec)
+
+
+
+mysql> desc appointments;
++-----------------+------+------+-----+---------+----------------+
+| Field           | Type | Null | Key | Default | Extra          |
++-----------------+------+------+-----+---------+----------------+
+| id              | int  | NO   | PRI | NULL    | auto_increment |
+| patient_id      | int  | NO   | MUL | NULL    |                |
+| doctor_id       | int  | NO   | MUL | NULL    |                |
+| appointmentdate | date | YES  |     | NULL    |                |
++-----------------+------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from appointments;
+Empty set (0.00 sec)
+
