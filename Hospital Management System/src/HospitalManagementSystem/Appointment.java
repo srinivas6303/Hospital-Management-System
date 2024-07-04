@@ -120,4 +120,26 @@ public class Appointment {
 
     }
 
+    public void removeAppointment(){
+        System.out.println("Enter appointment ID to remove:");
+        int id=scanner.nextInt();
+        String query="delete from appointments where id=?";
+        try{
+            PreparedStatement preparedStatement=connection.prepareStatement(query);
+            preparedStatement.setInt(1,id);
+            int rowsAffected=preparedStatement.executeUpdate();
+
+            if (rowsAffected > 0) {
+                System.out.println("Deleted Appointment by id=" + id);
+            } else {
+                System.out.println("Appointment id not found!");
+            }
+            preparedStatement.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+
+    }
+
 }
