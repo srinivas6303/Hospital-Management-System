@@ -35,7 +35,8 @@ public class Driver {
                 System.out.println("4. View Doctors");
                 System.out.println("5. Book Appointment");
                 System.out.println("6. view Appointment");
-                System.out.println("7. Exit");
+                System.out.println("7. remove Appointment");
+                System.out.println("8. Exit");
 
                 System.out.println("Enter your choice: ");
                 int choice = scanner.nextInt();
