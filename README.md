@@ -12,7 +12,7 @@ Developed a Java-based system for managing hospital operations, including patien
 
 Patient Class: Methods for adding, removing, viewing, and retrieving patient details.
 Doctor Class: Methods for checking doctor availability and viewing doctor details.
-Appointment Class: Methods for booking appointments and viewing appointment details.
+Appointment Class: Methods for booking appointments,removing appointments and viewing appointment details.
 Driver Class: Acts as the main driver, featuring a user-friendly menu and managing database interactions.
 
 Project Structure:
@@ -20,10 +20,11 @@ Project Structure:
 1. Patient:
 Methods	Return
 addPatient()	void
+removePatient  void
 viewPatients()	void
 getPatientById()	boolean
 
-2. Doctor:
+3. Doctor:
 Methods	Return
 viewDoctors()	void
 getDoctorById()	boolean
@@ -34,6 +35,7 @@ Methods	Return
 bookAppointment()	void
 isDoctorAvailable()	boolean
 viewAppointments()	void
+removeAppointment() void
 
 
 6. Driver:
