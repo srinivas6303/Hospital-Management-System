@@ -81,8 +81,12 @@ public class Driver {
                         System.out.println();
                         break;
 
+                    case 7://remove Appointment66
+                        appointment.removeAppointment();
+                        System.out.println();
+                        break;
 
-                    case 7://exit
+                    case 8://exit
                         System.out.println("Exiting...");
                         return;
 
