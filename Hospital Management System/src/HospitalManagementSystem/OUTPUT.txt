@@ -1,5 +1,5 @@
 OUTPUT:
--------
+------
 
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
@@ -8,19 +8,19 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
+
 Enter your choice: 
 1
 Enter patient name:
-srinivas
+krishna 
 Enter patient age:
-22
+40
 Enter patient gender:
 male
 Patient Added Successfully!!
 
-
-
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
 2. Remove Patient
@@ -28,68 +28,8 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
-Enter your choice: 
-1
-Enter patient name:
-praveen
-Enter patient age:
-21
-Enter patient gender:
-male
-Patient Added Successfully!!
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
-Enter your choice: 
-1
-Enter patient name:
-swathi
-Enter patient age:
-20
-Enter patient gender:
-female
-Patient Added Successfully!!
-
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
-Enter your choice: 
-1
-Enter patient name:
-madhav
-Enter patient age:
-11
-Enter patient gender:
-male
-Patient Added Successfully!!
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 3
 Patients:
@@ -102,10 +42,8 @@ Patients:
 +------------+--------------------+-----------+------------+
 | 3          | swathi             | 20       | female     |
 +------------+--------------------+-----------+------------+
-| 4          | madhav             | 11       | male       |
+| 6          | krishna            | 40       | male       |
 +------------+--------------------+-----------+------------+
-
-
 
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
@@ -114,14 +52,13 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 2
 Enter patient ID to remove:
-4
-Deleted Patient by id=4
-
-
+6
+Deleted Patient by id=6
 
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
@@ -130,7 +67,8 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 3
 Patients:
@@ -144,8 +82,6 @@ Patients:
 | 3          | swathi             | 20       | female     |
 +------------+--------------------+-----------+------------+
 
-
-
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
 2. Remove Patient
@@ -153,7 +89,8 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 4
 DOCTORS:
@@ -167,9 +104,6 @@ DOCTORS:
 | 3          | Praveen            | Radiology        |
 +------------+--------------------+------------------+
 
-
-
-
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
 2. Remove Patient
@@ -177,19 +111,17 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 5
 Enter Patient id:
 2
 Enter Doctor id:
-2
-Enter appointment date (YYYY-MM-DD):2024-07-03
+3
+Enter appointment date (YYYY-MM-DD):2024-07-04
 Appointment Added Successfully!!
 
-
-
-
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
 2. Remove Patient
@@ -197,67 +129,8 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
-Enter your choice: 
-5
-Enter Patient id:
-2
-Enter Doctor id:
-2
-Enter appointment date (YYYY-MM-DD):2024-07-03
-The doctor is not available on this date. Please choose a different date.
-
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
-Enter your choice: 
-5
-Enter Patient id:
-3
-Enter Doctor id:
-2
-Enter appointment date (YYYY-MM-DD):2024-07-03
-The doctor is not available on this date. Please choose a different date.
-
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
-Enter your choice: 
-5
-Enter Patient id:
-3
-Enter Doctor id:
-1
-Enter appointment date (YYYY-MM-DD):2024-07-14
-Appointment Added Successfully!!
-
-
-
-
-HOSPITAL MANAGEMENT SYSTEM 
-1. Add Patient
-2. Remove Patient
-3. View Patients
-4. View Doctors
-5. Book Appointment
-6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 6
 Appointments:
@@ -268,9 +141,10 @@ Appointments:
 +---------------+------------+------------+-----------------+
 | 2             | 3          | 1          | 2024-07-14      |
 +---------------+------------+------------+-----------------+
-
-
-
+| 4             | 1          | 2          | 2024-08-07      |
++---------------+------------+------------+-----------------+
+| 7             | 2          | 3          | 2024-07-04      |
++---------------+------------+------------+-----------------+
 
 HOSPITAL MANAGEMENT SYSTEM 
 1. Add Patient
@@ -279,9 +153,45 @@ HOSPITAL MANAGEMENT SYSTEM
 4. View Doctors
 5. Book Appointment
 6. view Appointment
-7. Exit
+7. remove Appointment
+8. Exit
 Enter your choice: 
 7
-Exiting...
+Enter appointment ID to remove:
+7
+Deleted Appointment by id=7
 
-Process finished with exit code 0
+HOSPITAL MANAGEMENT SYSTEM 
+1. Add Patient
+2. Remove Patient
+3. View Patients
+4. View Doctors
+5. Book Appointment
+6. view Appointment
+7. remove Appointment
+8. Exit
+Enter your choice: 
+6
+Appointments:
++---------------+------------+------------+-----------------+
+| Appointment Id| Patient Id | Doctor Id  | Appointment Date|
++---------------+------------+------------+-----------------+
+| 1             | 2          | 2          | 2024-07-03      |
++---------------+------------+------------+-----------------+
+| 2             | 3          | 1          | 2024-07-14      |
++---------------+------------+------------+-----------------+
+| 4             | 1          | 2          | 2024-08-07      |
++---------------+------------+------------+-----------------+
+
+HOSPITAL MANAGEMENT SYSTEM 
+1. Add Patient
+2. Remove Patient
+3. View Patients
+4. View Doctors
+5. Book Appointment
+6. view Appointment
+7. remove Appointment
+8. Exit
+Enter your choice: 
+8
+Exiting...
