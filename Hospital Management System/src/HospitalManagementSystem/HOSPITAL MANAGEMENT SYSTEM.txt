@@ -11,8 +11,8 @@ Developed a Java-based system for managing hospital operations, including patien
 
 Implemented the Patient class with methods for adding, removing, viewing, and retrieving patient details.
 Developed the Doctor class with methods for checking doctor availability and viewing doctor details.
-Created the Appointment class with methods for booking appointments and viewing appointment details.
-Designed the HospitalManagementSystem class to act as the main driver, featuring a user-friendly menu and managing database interactions.
+Created the Appointment class with methods for booking appointments,romove appointment and viewing appointment details.
+Designed the Driver class to act as the main driver, featuring a user-friendly menu and managing database interactions.
 
 
 
@@ -29,6 +29,8 @@ There are 4 class present here and its individual methods
 | viewPatients()    |  void   |
 +-------------------+---------+
 | getPatientById()  | boolean |
++-------------------+---------+
+| removePatient()   | void    |
 +-------------------+---------+
 
 
@@ -51,6 +53,8 @@ There are 4 class present here and its individual methods
 | isDoctorAvailable()   | boolean |
 +-----------------------+---------+
 | viewAppointments()    |  void   |
++-----------------------+---------+
+| removeAppointments()  |  void   |
 +-----------------------+---------+
 
 
