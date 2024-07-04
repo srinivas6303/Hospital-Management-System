@@ -48,15 +48,7 @@ public class Driver {
                         break;
 
                     case 2://removePatient
-                        System.out.println("Enter patient ID to remove:");
-                        int id=scanner.nextInt();
-
-                        if(patient.getPatientById(id)) {
-                            patient.removePatient(id);
-                        }
-                        else{
-                            System.out.println("Patient ID not found.");
-                        }
+                        patient.removePatient();
                         System.out.println();
                         break;
 
