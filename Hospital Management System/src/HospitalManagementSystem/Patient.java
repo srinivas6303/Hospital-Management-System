@@ -50,23 +50,34 @@ public class Patient {
         }
     }
 
-    public void removePatient(int id) {
-        String query = "DELETE FROM patients WHERE id = ?";
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setInt(1, id);
 
-            int rowsAffected = preparedStatement.executeUpdate();
 
-            if (rowsAffected > 0) {
-                System.out.println("Deleted Patient by id=" + id);
-            } else {
-                System.out.println("Patient id not found!");
+
+    public void removePatient() {
+        System.out.println("Enter patient ID to remove:");
+        int id = scanner.nextInt();
+
+
+        if (getPatientById(id)) {
+            String query = "DELETE FROM patients WHERE id = ?";
+            try {
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+                preparedStatement.setInt(1, id);
+
+                int rowsAffected = preparedStatement.executeUpdate();
+
+                if (rowsAffected > 0) {
+                    System.out.println("Deleted Patient by id=" + id);
+                } else {
+                    System.out.println("Patient id not found!");
+                }
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
 
-            preparedStatement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } else {
+            System.out.println("Patient id not found!");
         }
     }
 
@@ -119,6 +130,5 @@ public class Patient {
         return false;
     }
 }
-
 
 
